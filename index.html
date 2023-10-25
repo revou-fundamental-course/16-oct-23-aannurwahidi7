@@ -7,28 +7,98 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="logo">
-            <img src="assets/foto warna.jpg" alt="Avatar" height="75px" width="75px" style="border-radius: 50%;">
+            <!-- <img src="assets/foto warna.jpg" alt="Avatar" height="75px" width="75px" style="border-radius: 50%;"> -->
+            <h2 style="color: whitesmoke;">My Website</h2>
         </div>
-        <nav class="navbar">
-            <div class="nav">
-                <div class="nav-item">
-                    <a href="#">Home</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Our Profile</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Portofolio</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">Message Us</a>
-                </div>
+        <div class="nav">
+            <div class="nav-item">
+                <a href="#">Home</a>
             </div>
-        </nav>
-    </header>
-
+            <div class="nav-item">
+                <a href="#">Our Profile</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Portofolio</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Message Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="landing-page">
+        <div class="introduction">
+            <h1>Hi, Welcome to My Website</h1>
+            <p>This is my first website</p>
+        </div>
+    </div>
+    <div class="our-headquarter">
+        <div class="city">
+            <img src="assets/klee.gif" alt="https://tenor.com/id/view/klee-genshin-impact-klee-genshin-impact-knights-of-favonius-gif-490917946762598596">
+            <p>Jakarta</p>
+        </div>
+        <div class="city">
+            <img src="assets/qiqi.gif" alt="https://tenor.com/id/view/klee-genshin-impact-klee-genshin-impact-knights-of-favonius-gif-490917946762598596">
+            <p>Bandung</p>
+            
+        </div>
+        <div class="city">
+            <img src="assets/ety-sayu.gif" alt="https://tenor.com/id/view/klee-genshin-impact-klee-genshin-impact-knights-of-favonius-gif-490917946762598596">
+            <p>Surabaya</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-50">
+            <form id="form" name="message">
+                <div class="form-field">
+                    <div class="label">
+                        <label for="name">Nama</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="name" id="name" placeholder="Nama Anda" required />
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="label">
+                        <label for="ttl">Tanggal Lahir</label>
+                    </div>
+                    <div class="input">
+                        <input type="date" name="ttl" id="ttl" required />
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="label">
+                        <label>Jenis Kelamin</label>
+                    </div>
+                    <div class="radio-input">
+                        <input type="radio" name="gender" value="laki-laki">
+                        <label for="gender">Laki-Laki</label>
+                        <input type="radio" name="gender" value="perempuan">
+                        <label for="gender">Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="label">
+                        <label for="message">Pesan</label>
+                    </div>
+                    <div class="input">
+                        <textarea name="message" id="message" placeholder="Tulis sesuatu..." style="height: 200px;"></textarea>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <div class="label"></div>
+                    <div class="input">
+                        <input type="submit" value="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-50">
+            <div class="box" id="box">
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
