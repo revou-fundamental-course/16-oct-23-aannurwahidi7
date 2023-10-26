@@ -1,11 +1,4 @@
-// let message = [
-//     {
-
-//     }
-// ]
-
 var listMessage = [];
-
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -46,6 +39,17 @@ class Message {
             currentTime: this.time
         }
     }
+}
+
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-75px";
+  }
+  prevScrollpos = currentScrollPos;
 }
 
 var form = document.getElementById("form");
